@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Player</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="player">
+                <video id="video" poster="./images/poster.jpg" src="https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"></video>
+                <div class="player-overlay">
+                    <h2 class="player-title">Tears of Steel Trailer</h2>
+                    <div class="player-actions">
+                        <button class="button" id="backward" aria-label="Retroceder 10 Segundos" title="Retroceder 10 Segundos"></button>
+                        <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                        <button class="button" id="pause" aria-label="Pausar" title="Pausar" hidden></button>
+                        <button class="button" id="frontward" aria-label="Adelantar 10 Segundos" title="Adelantar 10 Segundos"></button>
+                    </div>
+                    <div class="player-progress">
+                        <input id="progress" type="range" min="0" value="0" step="1">
+                        <button class="button" id="mute" aria-label="Quitar Sonido" title="Quitar Sonido"></button>
+                        <button class="button" id="unmute" aria-label="Activar Sonido" title="Activar Sonido" hidden></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script src="./js/index.js"></script>
+    </body>
+</html>
